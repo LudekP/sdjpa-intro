@@ -10,23 +10,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/**
- * Created by jt on 6/12/21.
- */
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class Book {
+public class Author {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private String title;
-    private String isbn;
-    private String publisher;
-    private Long authorId;
+    private String firstName;
+    private String lastName;
 
 }

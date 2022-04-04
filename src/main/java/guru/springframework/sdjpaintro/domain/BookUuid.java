@@ -20,7 +20,7 @@ public class BookUuid {
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(columnDefinition = "binary(16)", updatable = false, nullable = false)
+    @Column(columnDefinition = "varbinary(16)", updatable = false, nullable = false)
     private UUID id;
 
     private String title;
